@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+   <form action="suceed.html" method="post">
+    <div class="center">
+        <h1 id="captchaHeading">Code Clause Contact Form</h1>
+        <div id="captchaBackground">
+            <label style="color: rgba(232, 225, 16, 0.943);" for="name"> NAME</label>
+            <input type="text" name="" id="name" required>
+            <br> 
+            <label style="color: rgba(232, 225, 16, 0.943);" for="mob"> MOBILE</label>
+            <input  type="number" name="" id="mob" required>
+            <br>
+            <label style="color: rgba(232, 225, 16, 0.943);" for="res"> UPOAD RESUME</label>
+            <br>
+            <input type="file" name="" id="res" accept=".pdf,.docx" required>
+            <br>
+            <label style="color: rgba(232, 225, 16, 0.943);" for="mail"> E-MAIL</label>
+            <input type="email" name="" id="mail" required>
+            <br>
+            <label style="color: rgba(232, 225, 16, 0.943);" for="tb">PLEASE ENTER THE CAPTCHA </label>
+            <input id="textBox" type="text" id="tb" name="text">
+            <canvas id="captcha">captcha text</canvas>
+            <div id="buttons">
+                <input id="submitButton" type="submit">
+                <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+        </div>
+    </div>
+</form>
+    <script src="script.js"></script>
+</body>
