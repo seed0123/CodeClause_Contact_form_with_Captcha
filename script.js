@@ -34,6 +34,8 @@ userText.addEventListener('keyup', function(e) {
         if (userText.value === c) {
             output.classList.add("correctCaptcha");
             output.innerHTML = "Correct!";
+            location.href="suceed.html";
+
         } else {
             output.classList.add("incorrectCaptcha");
             output.innerHTML = "Incorrect Captcha ! Please try again";
@@ -48,6 +50,7 @@ submitButton.addEventListener('click', function() {
     if (userText.value === c) {
         output.classList.add("correctCaptcha");
         output.innerHTML = "Correct!";
+        location.href="suceed.html";
     } else {
         output.classList.add("incorrectCaptcha");
         output.innerHTML = "Incorrect Captcha ! Please try again";
